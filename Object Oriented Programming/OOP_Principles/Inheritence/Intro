@@ -1,0 +1,90 @@
+"""Inherintence:
+
+The process of inherit all the properties and methods from parent class to child class
+
+                    <<< SYNTAX >>>
+
+class parentclassname():
+
+    methods / staements
+
+class childclassname(parentclassname):
+
+    methods / staements
+
+create object and then can call methods from both child class and parent class
+
+                    <<< SYNTAX >>>
+class Parent():
+   
+     body of the parent class
+
+class derivedclassname(parent):
+
+    Body of the derived class
+
+"""
+
+
+
+# class Parent():
+
+#     def greeting(self):
+
+#         print("Hello")
+
+# class Child(Parent):
+
+#     def meet(self):
+
+#         print("Oi")
+
+# obj = Child()
+
+# obj.greeting()
+
+# obj.meet()
+# ====================================================================================================================
+
+# class Parent():
+
+#     def greeting(self):
+
+#         print("Hello")
+
+# class Child(Parent):
+
+#     def meet(self):
+
+#         print("Oi")
+
+#     def greeting(self):
+
+#         print("Iam called")
+
+#         return super().greeting()        #does what exact statement in parent class
+
+# obj = Child()
+
+# obj.greeting()
+
+# obj.meet()
+# ====================================================================================================================
+
+class Parent():
+
+    def vehicle(self):
+
+        print("Maruti")
+
+class Child(Parent):
+
+    def vehicle(self):
+
+        print("Polo")
+
+        return super().vehicle()
+    
+obj = Child()
+
+obj.vehicle()
