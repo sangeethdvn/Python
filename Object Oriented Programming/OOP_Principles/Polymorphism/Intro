@@ -1,0 +1,21 @@
+#                         # <<< POLYMORPHISM >>>
+
+
+# # It refers to the use of a single method(operator, or object to represent different types in different scenarious)
+class A:
+
+    def method1(self):
+
+        print("hello")
+
+class B(A):
+
+    def method1(self):
+
+        print("hello world")            # >>>> method overriding 
+
+        return super().method1()
+    
+obj1 = B()
+
+obj1.method1()
