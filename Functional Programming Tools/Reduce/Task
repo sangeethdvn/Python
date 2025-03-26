@@ -1,0 +1,20 @@
+from functools import reduce
+
+numbers = [4,1,5,6,7,8,10,3,7]
+
+# apply a function to double each elements 
+# then extract the numbers greater than 10 and take the product of numbers
+
+s = list(map(lambda x:x * 2,numbers))
+
+print(s)
+
+g =(list(filter(lambda x:x>=10,s)))
+
+print(g)
+
+print(reduce(lambda a,b:a * b, g))
+
+
+
+
